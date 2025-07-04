@@ -5,7 +5,7 @@ import HeroSection from "./HeroSection";
 
 const LandingPage = () => {
   return(
-  <div>
+  <div className='mb-10'>
       <HeroSection/>
   </div>
   )

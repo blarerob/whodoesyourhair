@@ -11,7 +11,8 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className="w-full flex items-center h-20 px-4 relative">
+      <div className="w-full flex items-center h-20 px-4 fixed top-0 left-0 z-50">
+    <div className="w-full flex items-center h-20 px-4 absolute">
       {/* Desktop Menu */}
       <div className="hidden md:flex w-full justify-center items-center">
       <div className="text-white ml-28 space-x-10 text-lg font-medium h-full">
@@ -24,7 +25,7 @@ const Navbar = () => {
       </div>
         <a
           href="#book"
-          className="hidden md:flex justify-end items-end rounded-full text-white text-nowrap
+          className="hidden md:flex justify-end items-end rounded-full mr-3 text-white text-nowrap
           hover:bg-red-600 transition"
             >
           BOOK A CONSULTATION
@@ -71,6 +72,7 @@ const Navbar = () => {
         </div>
       )}
     </div>
+  </div>
   );
 };
 
